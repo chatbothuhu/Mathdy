@@ -15,14 +15,14 @@ def handle_conversation(user_text):
         return "Sama-sama, senang bisa membantu!"
     elif "tips belajar" in user_text or "tips and trick belajar mtk" in user_text:
         return """
-            <ul>
-            Tips Belajar Matematika ala Mathdy:
-                <li>Pahami konsep dasar materi</li>
-                <li>Belajar dari berbagai sumber</li>
-                <li>Rajin latihan soal</li>
-                <li>Belajar secara berkelompok</li>
-                <li>Buat jadwal belajar rutin</li>
-            </ul>
+        <h3>Berikut adalah tips belajar matematika ala Mathdy:</h3>
+        <ul>
+        <li>Pahami konsep dasar materi</li>
+        <li>Belajar dari berbagai sumber</li>
+        <li>Rajin latihan soal</li>
+        <li>Belajar secara berkelompok</li>
+        <li>Buat jadwal belajar rutin</li>
+        </ul>
         """
     elif "list materi" in user_text or "materi" in user_text:
         return """
