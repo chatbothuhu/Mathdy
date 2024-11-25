@@ -13,21 +13,21 @@ def handle_conversation(user_text):
         return "Hai, aku Mathdy! Ada yang bisa aku bantu?"
     elif "terima kasih" in user_text or "thank you" in user_text or "thanks" in user_text:
         return "Sama-sama, senang bisa membantu!"
-    elif "tips belajar" in user_text or "tips and trick belajar mtk" in user_text:
+    elif "tips belajar" in user_text or "tips" in user_text or "tips Mathdy" in user_text:
         return """
-        <h3>Berikut adalah tips belajar matematika ala Mathdy:</h3>
-        <ul>
-        <li>Pahami konsep dasar materi</li>
-        <li>Belajar dari berbagai sumber</li>
-        <li>Rajin latihan soal</li>
-        <li>Belajar secara berkelompok</li>
-        <li>Buat jadwal belajar rutin</li>
-        </ul>
+        <h3>Tips Belajar Matematika ala Mathdy:</h3>
+            <ul>
+                <li>Pahami konsep dasar materi</li>
+                <li>Belajar dari berbagai sumber</li>
+                <li>Rajin latihan soal</li>
+                <li>Belajar secara berkelompok</li>
+                <li>Buat jadwal belajar rutin</li>
+            </ul>
         """
     elif "list materi" in user_text or "materi" in user_text:
         return """
+        <h3>List Materi Matematika Dasar:</h3>
             <ul>
-            List Materi Matematika Dasar:
                 <li>Bilangan dan Operasi Bilangan</li>
                 <li>Pecahan, Desimal, dan Persen</li>
                 <li>Aljabar</li>
@@ -43,6 +43,19 @@ def handle_conversation(user_text):
     else:
         return "Maaf, aku hanya bisa membantu dengan soal matematika dan bercanda!"
 
+def solve_factorial_expression(user_text):
+    try:
+        # Check if the input ends with "!"
+        if user_text.endswith("!"):
+            # Extract the number before "!"
+            number = int(user_text[:-1])  # Remove the "!" and convert to integer
+            if number < 0:
+                return "Error: Factorial of a negative number is undefined."
+            result = math.factorial(number)
+            return f"{number}! = {result}"
+        return None  # Return None if it's not a factorial
+    except ValueError:
+        return "Error: Invalid input for factorial."
 
 # Fungsi untuk memeriksa apakah input adalah ekspresi matematika
 def is_math_expression(user_text):
@@ -100,6 +113,6 @@ def get_chatbot_response():
 
 logging.basicConfig(level=logging.DEBUG)
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # Perbaikan disini
     print("Starting Flask server...")
     app.run(debug=True, host='0.0.0.0', port=5000)
