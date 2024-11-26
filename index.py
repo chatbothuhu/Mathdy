@@ -39,7 +39,9 @@ def handle_conversation(user_text):
                 <li>Persamaan dan Pertdaksamaan Kuadrat</li>
                 <li>Fungsi Komposisi dan Invers</li>
             </ul>
-        """    else:
+        """   
+        
+
     return "Maaf, aku hanya bisa membantu dengan soal matematika, tips dan bercanda!"
 
 def solve_factorial_expression(user_text):
