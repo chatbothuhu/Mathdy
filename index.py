@@ -39,9 +39,8 @@ def handle_conversation(user_text):
                 <li>Persamaan dan Pertdaksamaan Kuadrat</li>
                 <li>Fungsi Komposisi dan Invers</li>
             </ul>
-        """
-    else:
-        return "Maaf, aku hanya bisa membantu dengan soal matematika dan bercanda!"
+        """    else:
+    return "Maaf, aku hanya bisa membantu dengan soal matematika, tips dan bercanda!"
 
 def solve_factorial_expression(user_text):
     try:
@@ -59,11 +58,13 @@ def solve_factorial_expression(user_text):
 
 # Fungsi untuk memeriksa apakah input adalah ekspresi matematika
 def is_math_expression(user_text):
-    math_pattern = r'^[0-9\+\-\/%\s\(\)\.\\*sqrt]+$'
+    math_pattern = r'^[0-9\+\-\/%\s\(\)\.\\*sqrt!]+$'
     return re.match(math_pattern, user_text.strip()) is not None
 
 # Fungsi untuk evaluasi ekspresi matematika
 def solve_math_expression(user_text):
+    if "!" in user_text:
+        return solve_factorial_expression(user_text)
     try:
         user_text = user_text.replace("sqrt(", "math.sqrt(")
         result = eval(user_text)
@@ -113,6 +114,6 @@ def get_chatbot_response():
 
 logging.basicConfig(level=logging.DEBUG)
 
-if __name__ == "__main__":  # Perbaikan disini
+if __name__ == "__main__":
     print("Starting Flask server...")
     app.run(debug=True, host='0.0.0.0', port=5000)
