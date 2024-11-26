@@ -23,7 +23,19 @@ def handle_conversation(user_text):
                 <li>Belajar secara berkelompok</li>
                 <li>Buat jadwal belajar rutin</li>
             </ul>
-        """      
+        """  
+    elif "sumber belajar" in user_text or "rekomendasi sumber belajar" in user_text:
+         return """
+        <h3>Sumber Belajar Matematika ala Mathdy:</h3>
+            <ul>
+                <li>Photomath </li>
+                <li>Channel yt Math Lab</li>
+                <li>Channel yt Ko Ben</li>
+                <li>Playlist Matematika Dasar Matematika</li>
+                <li>Twitter</li>
+                <li>dan masih banyak lagi</li>
+            </ul>
+        """ 
     return "Maaf, aku hanya bisa membantu dengan soal matematika, tips dan bercanda!"
 
 def solve_factorial_expression(user_text):
