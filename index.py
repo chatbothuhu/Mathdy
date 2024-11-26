@@ -24,16 +24,35 @@ def handle_conversation(user_text):
                 <li>Buat jadwal belajar rutin</li>
             </ul>
         """  
-    elif "sumber belajar" in user_text or "rekomendasi sumber belajar" in user_text:
+    elif "rekomendasi aplikasi" in user_text or "aplikasi" in user_text:
          return """
-        <h3>Sumber Belajar Matematika ala Mathdy:</h3>
+        <h3>Rekomendasi Aplikasi untuk Belajar Matematika:</h3>
             <ul>
-                <li>Photomath </li>
-                <li>Channel yt Math Lab</li>
-                <li>Channel yt Ko Ben</li>
-                <li>Playlist Matematika Dasar Matematika</li>
-                <li>Twitter</li>
-                <li>dan masih banyak lagi</li>
+                <li>Photomath: aplikasi ini dapat mendeteksi angka dan simbol yang kamu foto lalu menyajikan hasil dan cara pengerjaannya</li>
+                <li>CoLearn: aplikasi ini menyediakan video pembelajaran yang membahas soal matematika dalam bentuk cerita</li>
+                <li>Graphing Calculator + Math: aplikasi yang dapat menyelesaikan soal berbentuk persamaan, kurva, dan grafik</li>
+                <li>Qanda: aplikasi yang dapat menjawab soal matematika dengan cepat dan dapat memungkinkan pengguna untuk berdiskusi langsung dengan tutor melalui chat</li>
+                <li>Math Trick: aplikasi yang menyediakan ratusan rumus dan trik belajar matematika</li>
+            </ul>
+        """ 
+    elif "rekomendasi website" in user_text or "website" in user_text:
+         return """
+        <h3>Rekomendasi Website untuk Belajar Matematika:</h3>
+            <ul>
+                <li><a href="https://www.zenius.net/" target="_blank">Zenius</a>: website yang menyediakan video pembelajaran matematika dasar dan fundamental matematika</li>
+                <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a>: website yang menyediakan materi pembelajaran matematika yang dibuat oleh pengajar dari berbagai negara</li>
+                <li><a href="https://mathcyber1997.com/" target="_blank">Math Cyber 1997</a>: website yang menyediakan materi dan latihan soal dengan berbagai topik</li>
+            </ul>
+        """ 
+    elif "rekomendasi channel youtube" in user_text or "youtube" in user_text:
+         return """
+        <h3>Rekomendasi Channel YouTube untuk Belajar Matematika:</h3>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
             </ul>
         """ 
     return "Maaf, aku hanya bisa membantu dengan soal matematika, tips dan bercanda!"
