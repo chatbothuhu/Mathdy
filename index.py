@@ -23,25 +23,7 @@ def handle_conversation(user_text):
                 <li>Belajar secara berkelompok</li>
                 <li>Buat jadwal belajar rutin</li>
             </ul>
-        """
-    elif "list materi" in user_text or "materi" in user_text:
-        return """
-        <h3>List Materi Matematika Dasar:</h3>
-            <ul>
-                <li>Bilangan dan Operasi Bilangan</li>
-                <li>Pecahan, Desimal, dan Persen</li>
-                <li>Aljabar</li>
-                <li>Eksponen dan Logaritma</li>
-                <li>Perbandingan</li>
-                <li>Pengukuran Panjang, Berat, dan Volume</li>
-                <li>Bangun Datar dan Bangun Ruang</li>
-                <li>Sistem Persamaan dan Pertdaksamaan Linear</li>
-                <li>Persamaan dan Pertdaksamaan Kuadrat</li>
-                <li>Fungsi Komposisi dan Invers</li>
-            </ul>
-        """   
-        
-
+        """      
     return "Maaf, aku hanya bisa membantu dengan soal matematika, tips dan bercanda!"
 
 def solve_factorial_expression(user_text):
