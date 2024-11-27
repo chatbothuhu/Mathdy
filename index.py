@@ -33,6 +33,7 @@ def handle_conversation(user_text):
                 <li>Graphing Calculator + Math: aplikasi yang dapat menyelesaikan soal berbentuk persamaan, kurva, dan grafik</li>
                 <li>Qanda: aplikasi yang dapat menjawab soal matematika dengan cepat dan dapat memungkinkan pengguna untuk berdiskusi langsung dengan tutor melalui chat</li>
                 <li>Math Trick: aplikasi yang menyediakan ratusan rumus dan trik belajar matematika</li>
+                <li>Pahamify: aplikasi ini merupakan aplikasi les online yang dimana beberapa fitur juga bisa kita akses secara gratis dan tetap bisa membantu kita</li>
             </ul>
         """ 
     elif "rekomendasi website" in user_text or "website" in user_text:
@@ -42,17 +43,19 @@ def handle_conversation(user_text):
                 <li><a href="https://www.zenius.net/" target="_blank">Zenius</a>: website yang menyediakan video pembelajaran matematika dasar dan fundamental matematika</li>
                 <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a>: website yang menyediakan materi pembelajaran matematika yang dibuat oleh pengajar dari berbagai negara</li>
                 <li><a href="https://mathcyber1997.com/" target="_blank">Math Cyber 1997</a>: website yang menyediakan materi dan latihan soal dengan berbagai topik</li>
+                <li><a href="https://www.m4th-lab.net/" target="_blank">m4th-lab</a>: website yang menyediakan kumpulan soal-soal tidak hanya matematika dan dibagikan secara gratis</li>
             </ul>
         """ 
     elif "rekomendasi channel youtube" in user_text or "youtube" in user_text:
          return """
         <h3>Rekomendasi Channel YouTube untuk Belajar Matematika:</h3>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="http://www.youtube.com/@BIGCourse" target="_blank">Channel BIG Course</a>: channel yang juga lebi sering dikenal dengan Ko Ben. Memiiliki ciri khas saat menjelaskan sehingga banyak orang yang paham melalui penjelasnnya</li>
+                <li><a href="http://www.youtube.com/@PrivatAlFaiz" target="_blank">Channel Prival Al Faiz</a>: channel ini sudah dikenal banyak orang dan memang sangat membantu tidak dibidang matematika saja, tapi juga membantu kalian yang ingin belajar untuk persiapan UTBK, CPNS, dan sebagainya</li>
+                <li><a href="http://www.youtube.com/@m4thlab" target="_blank">Channel m4th-lab</a>: channel ini sudah terbukti memang sangat membantu dan juga dia memiliki blog dimana itu merupakan tempat kumpulan soal-soal</li>
+                <li><a href="http://www.youtube.com/@miraclesitompul" target="_blank">Channel Miracle Sitompul</a>: beberapa dari kalian mungkin pernah melihat kakak ini di sosial media. Tetapi kakak ini juga mempunyai yt channel yang dimana tidak hanya membahas pelajaran saja, tetapi juga soft skill yang sekiranya kita perlukan juga</li>
+                <li><a href="http://www.youtube.com/@RettaPramesti" target="_blank">Channel Retta Pramesti</a>: mungkin masih banyak yang abru mendengar channel ini tetapi channel ini banyak menjelaskan tentang seputaran SKD dan juga SNBT</li>
+                <li><a href="https://www.youtube.com/@Pahamify" target="_blank">Channel Pahamify</a>: channel ini sudah terkenal sangat membantu tidak di matematika saja, tapi didalam pelajaran lain juga. Dan Pahamify sudah memiliki aplikasi pembelajaran juga yang bisa diakses gratis ataupun berbayar</li>
             </ul>
         """ 
     return "Maaf, aku hanya bisa membantu dengan soal matematika, tips dan bercanda!"
