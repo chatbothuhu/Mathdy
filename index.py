@@ -26,7 +26,7 @@ def handle_conversation(user_text):
         """  
     elif "rekomendasi aplikasi" in user_text or "aplikasi" in user_text:
          return """
-        <h3>Rekomendasi Aplikasi untuk Belajar Matematika:</h3>
+        <h3>Rekomendasi Aplikasi untuk Belajar Matematika ala Mathdy:</h3>
             <ul>
                 <li>Photomath: aplikasi ini dapat mendeteksi angka dan simbol yang kamu foto lalu menyajikan hasil dan cara pengerjaannya</li>
                 <li>CoLearn: aplikasi ini menyediakan video pembelajaran yang membahas soal matematika dalam bentuk cerita</li>
@@ -38,7 +38,7 @@ def handle_conversation(user_text):
         """ 
     elif "rekomendasi website" in user_text or "website" in user_text:
          return """
-        <h3>Rekomendasi Website untuk Belajar Matematika:</h3>
+        <h3>Rekomendasi Website untuk Belajar Matematika ala Mathdy:</h3>
             <ul>
                 <li><a href="https://www.zenius.net/" target="_blank">Zenius</a>: website yang menyediakan video pembelajaran matematika dasar dan fundamental matematika</li>
                 <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a>: website yang menyediakan materi pembelajaran matematika yang dibuat oleh pengajar dari berbagai negara</li>
@@ -48,7 +48,7 @@ def handle_conversation(user_text):
         """ 
     elif "rekomendasi channel youtube" in user_text or "youtube" in user_text:
          return """
-        <h3>Rekomendasi Channel YouTube untuk Belajar Matematika:</h3>
+        <h3>Rekomendasi Channel YouTube untuk Belajar Matematika ala Mathdy:</h3>
             <ul>
                 <li><a href="http://www.youtube.com/@BIGCourse" target="_blank">Channel BIG Course</a>: channel yang juga lebi sering dikenal dengan Ko Ben. Memiiliki ciri khas saat menjelaskan sehingga banyak orang yang paham melalui penjelasnnya</li>
                 <li><a href="http://www.youtube.com/@PrivatAlFaiz" target="_blank">Channel Prival Al Faiz</a>: channel ini sudah dikenal banyak orang dan memang sangat membantu tidak dibidang matematika saja, tapi juga membantu kalian yang ingin belajar untuk persiapan UTBK, CPNS, dan sebagainya</li>
