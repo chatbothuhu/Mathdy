@@ -124,11 +124,11 @@
             <h3>1. Membuka dan Mengakhiri Percakapan</h3>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;➥ Gunakan kata: hi, halo, hello, dan hai jika kamu ingin mengawali percakapan atau menyapa Mathdy.<br>&nbsp;&nbsp;&nbsp;&nbsp;➥ Gunakan kata: terima kasih, thank you, dan thanks jika kamu ingin mengakhiri percakapan dan mengucapkan terima kasih pada Mathdy.<br><p>
             <h3><br>2. Menjalankan Operasi Hitung</h3>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;➥ Silahkan ketik angka beserta operasi hitung yang bisa digunakan: tambah (+), kurang (-), bagi (/), kali (*), modulus (%), akar kuadrat (sqrt(angka)), pangkat (** untuk pangkat 2, *** untuk pangkat 3, dst); misal: 2+3-4/5*6%7**sqrt(8)<br></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;➥ Silahkan ketik angka beserta operasi hitung yang bisa digunakan: tambah (+), kurang (-), bagi (/), kali (*), modulus (%), akar kuadrat (sqrt(angka)), pangkat (** untuk pangkat 2, *** untuk pangkat 3, dst), faktorial (!); misal: 2!+3-4/5*6%7**sqrt(8)<br></p>
             <h3><br>3. Menampilkan Jokes</h3>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;➥ Silahkan ketik "jokes" atau "joke".<br></p>
             <h3><br>4. Meminta Tips atau Rekomendasi Belajar Matematika Dasar</h3>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;➥ Ketik "tips belajar", "tips", atau "tips Mathdy" jika kamu ingin mendapatkan tips belajar matematika yang menyenangkan ala Mathdy.<br>&nbsp;&nbsp;&nbsp;&nbsp;➥ Ketik "list materi" atau "materi" jika kamu ingin mendapatkan list materi matematika dasar yang Mathdy rekomendasikan untuk kamu pelajari.<br></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;➥ Ketik "tips belajar", "tips", atau "tips Mathdy" jika kamu ingin mendapatkan tips belajar matematika yang menyenangkan ala Mathdy.<br>&nbsp;&nbsp;&nbsp;&nbsp;➥ Ketik "rekomendasi aplikasi" atau "aplikasi" jika kamu ingin mendapatkan rekomendasi aplikasi belajar matematika pilihan Mathdy.<br>&nbsp;&nbsp;&nbsp;&nbsp;➥ Ketik "rekomendasi website" atau "website" jika kamu ingin mendapatkan rekomendasi website belajar matematika pilihan Mathdy.<br>&nbsp;&nbsp;&nbsp;&nbsp;➥ Ketik "rekomendasi channel youtube" atau "youtube" jika kamu ingin mendapatkan rekomendasi channel youtube belajar matematika pilihan Mathdy.<br></p>
         </div>
         
         <div class="chat-container"> 
@@ -136,8 +136,8 @@
                 <h3 class="botText"><span>Halo Mathdies!</span></h3>
             </div>
             <div class="input-container">
-                <input type="text" id="textInput" placeholder="Type your message here">
-                <button onclick="getUserResponse()">Send</button>
+                <input type="text" id="textInput" placeholder="Ketikkan instruksi disini">
+                <button onclick="getUserResponse()">Kirim</button>
             </div>
         </div>
     </div>
@@ -151,11 +151,10 @@
             $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
 
             $.get("/get", { userMessage: userText }).done(function(data) {
-                var botHTML = "<h3 class='bot'><span>" + data + "</span></h3>";
+                var botHTML = "<h3 class='bot'>" + data + "</h3>";  // Menggunakan HTML, bukan teks biasa
                 $('#chatbox').append(botHTML);
                 $('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
             });
-
         }
 
         $('#textInput').keypress(function(e) {
