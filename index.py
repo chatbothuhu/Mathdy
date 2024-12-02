@@ -28,10 +28,10 @@ def handle_conversation(user_text):
          return """
         <h3>Rekomendasi Aplikasi untuk Belajar Matematika ala Mathdy:</h3>
             <ul>
-                <li><h3>Photomath: aplikasi ini dapat mendeteksi angka dan simbol yang kamu foto lalu menyajikan hasil dan cara pengerjaannya</h3></li>
+                <li><h3>Photomath: aplikasi ini dapat mendeteksi angka dan simbol yang kamu foto lalu menyajikan hasil dan cara pengerjaannya</li>
                 <li><h3>CoLearn: aplikasi ini menyediakan video pembelajaran yang membahas soal matematika dalam bentuk cerita</h3></li>
                 <li><h3>Graphing Calculator + Math: aplikasi yang dapat menyelesaikan soal berbentuk persamaan, kurva, dan grafik</h3></li>
-                <li><h3>Qanda: aplikasi yang dapat menjawab soal matematika dengan cepat dan dapat memungkinkan pengguna untuk berdiskusi langsung dengan tutor melalui chat</h3></li>
+                <li><h3>Qanda: aplikasi yang dapat menjawab soal matematika dengan cepat dan dapat memungkinkan pengguna untuk berdiskusi langsung dengan tutor melalui chat</li>
                 <li><h3>Math Trick: aplikasi yang menyediakan ratusan rumus dan trik belajar matematika</h3></li>
                 <li><h3>Pahamify: aplikasi ini merupakan aplikasi les online yang dimana beberapa fitur juga bisa kita akses secara gratis dan tetap bisa membantu kita</h3></li>
             </ul>
@@ -51,7 +51,7 @@ def handle_conversation(user_text):
         <h3>Rekomendasi Channel YouTube untuk Belajar Matematika ala Mathdy:</h3>
             <ul>
                 <li><h3><a href="https://www.youtube.com/@MatematikaDasar" target="_blank">Channel Matematika Dasar</a>: channel menyediakan beragam video singkat yang membahas konsep dan materi matematika dasar. Channel ini dapat membantu kamu memperkuat fondasi matematikamu!</h3></li>
-                <li><h3><a href="http://www.youtube.com/@BIGCourse" target="_blank">Channel BIG Course</a>: channel yang dapat membantu kamu memahami pelajaran matematika dengan penjelasan yang rinci</h3></li>
+                <li><h3><a href="http://www.youtube.com/@BIGCourse" target="_blank">Channel BIG Course</a>: channel yang dapat membantu kamu memahami pelajaran matematika dengana penjelasan yang rinci</h3></li>
                 <li><h3><a href="http://www.youtube.com/@PrivatAlFaiz" target="_blank">Channel Prival Al Faiz</a>: channel ini dapat membantu kamu mempelajari soal-soal matematika yang diujikan dalam tes UTBK, CPNS, dll</h3></li>
                 <li><h3><a href="http://www.youtube.com/@m4thlab" target="_blank">Channel m4th-lab</a>: channel ini membahas berbagai topik pelajaran matematika yang dilengkapi blog berisi kumpulan soal matematika</h3></li>
                 <li><h3><a href="http://www.youtube.com/@miraclesitompul" target="_blank">Channel Miracle Sitompul</a>: channel yang membahas soal-soal matematika dengan menggunakan bahasa sehari-hari yang mudah dipahami. Selain membahas soal, channel ini juga dapat membantu kamu mempelajari kerangka pikir matematika.</h3></li
